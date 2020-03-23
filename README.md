@@ -5,3 +5,15 @@ Starting on the 2020-03-23 at 10.AM UTC I will try to solve at least one problem
 ---
 
 Link to the Discord-server: https://discord.gg/mQpT3f2
+
+## Logbook:
+
+#### Day 1 (2020-03-23):
+
+- Finished stage 1 of the [Encryption-Decryption](https://hyperskill.org/projects/46?goal=7) project
+- Finished stage 2 of the [Encryption-Decryption](https://hyperskill.org/projects/46?goal=7) project
+- Finished stage 3 of the [Encryption-Decryption](https://hyperskill.org/projects/46?goal=7) project
+- Finished stage 4 of the [Encryption-Decryption](https://hyperskill.org/projects/46?goal=7) project
+- Finished stage 5 of the [Encryption-Decryption](https://hyperskill.org/projects/46?goal=7) project
+- Finished stage 6 of the [Encryption-Decryption](https://hyperskill.org/projects/46?goal=7) project
+- Finished the [Encryption-Decryption](https://hyperskill.org/projects/46?goal=7) project
