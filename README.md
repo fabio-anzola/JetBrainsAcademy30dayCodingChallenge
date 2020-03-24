@@ -17,3 +17,13 @@ Link to the Discord-server: https://discord.gg/mQpT3f2
 - Finished stage 5 of the [Encryption-Decryption](https://hyperskill.org/projects/46?goal=7) project
 - Finished stage 6 of the [Encryption-Decryption](https://hyperskill.org/projects/46?goal=7) project
 - Finished the [Encryption-Decryption](https://hyperskill.org/projects/46?goal=7) project
+
+#### Day 2 (2020-03-24):
+
+- Finished stage 1 of the [Coffee Machine](https://hyperskill.org/projects/33?goal=7) project
+- Finished stage 2 of the [Coffee Machine](https://hyperskill.org/projects/33?goal=7) project
+- Finished stage 3 of the [Coffee Machine](https://hyperskill.org/projects/33?goal=7) project
+- Finished stage 4 of the [Coffee Machine](https://hyperskill.org/projects/33?goal=7) project
+- Finished stage 5 of the [Coffee Machine](https://hyperskill.org/projects/33?goal=7) project
+- Finished stage 6 of the [Coffee Machine](https://hyperskill.org/projects/33?goal=7) project
+- Finished the [Coffee Machine](https://hyperskill.org/projects/33?goal=7) project
