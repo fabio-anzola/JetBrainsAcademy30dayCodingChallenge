@@ -27,3 +27,11 @@ Link to the Discord-server: https://discord.gg/mQpT3f2
 - Finished stage 5 of the [Coffee Machine](https://hyperskill.org/projects/33?goal=7) project
 - Finished stage 6 of the [Coffee Machine](https://hyperskill.org/projects/33?goal=7) project
 - Finished the [Coffee Machine](https://hyperskill.org/projects/33?goal=7) project
+
+#### Day 3 (2020-03-25):
+
+- Finished stage 1 of the [Simple Chatty Bot](https://hyperskill.org/projects/31?goal=7) project
+- Finished stage 2 of the [Simple Chatty Bot](https://hyperskill.org/projects/31?goal=7) project
+- Finished stage 3 of the [Simple Chatty Bot](https://hyperskill.org/projects/31?goal=7) project
+- Finished stage 4 of the [Simple Chatty Bot](https://hyperskill.org/projects/31?goal=7) project
+- Finished the [Simple Chatty Bot](https://hyperskill.org/projects/31?goal=7) project
