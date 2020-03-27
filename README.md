@@ -39,3 +39,9 @@ Link to the Discord-server: https://discord.gg/mQpT3f2
 #### Day 4 (2020-03-26):
 - Finished stage 1 of the [Tic-Tac-Toe](https://hyperskill.org/projects/48?goal=7) project
 - Finished stage 2 of the [Tic-Tac-Toe](https://hyperskill.org/projects/48?goal=7) project
+
+#### Day 5 (2020-03-27):
+- Finished stage 3 of the [Tic-Tac-Toe](https://hyperskill.org/projects/48?goal=7) project
+- Finished stage 4 of the [Tic-Tac-Toe](https://hyperskill.org/projects/48?goal=7) project
+- Finished stage 5 of the [Tic-Tac-Toe](https://hyperskill.org/projects/48?goal=7) project
+- Finished the [Tic-Tac-Toe](https://hyperskill.org/projects/48?goal=7) project
