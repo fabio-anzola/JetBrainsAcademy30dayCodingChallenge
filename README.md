@@ -48,3 +48,6 @@ Link to the Discord-server: https://discord.gg/mQpT3f2
 
 #### Day 6 (2020-03-28):
 - Finished stage 1 of the [Flashcards](https://hyperskill.org/projects/44?goal=7) project
+
+#### Day 7 (2020-03-29):
+- Finished stage 2 of the [Flashcards](https://hyperskill.org/projects/44?goal=7) project
