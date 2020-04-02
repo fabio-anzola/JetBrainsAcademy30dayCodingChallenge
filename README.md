@@ -60,3 +60,8 @@ Link to the Discord-server: https://discord.gg/mQpT3f2
 
 #### Day 10 (2020-04-01):
 - Finished stage 5 of the [Flashcards](https://hyperskill.org/projects/44?goal=7) project
+
+#### Day 11 (2020-04-02):
+- Finished stage 6 of the [Flashcards](https://hyperskill.org/projects/44?goal=7) project
+- Finished stage 7 of the [Flashcards](https://hyperskill.org/projects/44?goal=7) project
+- Finished the [Flashcards](https://hyperskill.org/projects/44?goal=7) project
