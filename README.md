@@ -65,3 +65,6 @@ Link to the Discord-server: https://discord.gg/mQpT3f2
 - Finished stage 6 of the [Flashcards](https://hyperskill.org/projects/44?goal=7) project
 - Finished stage 7 of the [Flashcards](https://hyperskill.org/projects/44?goal=7) project
 - Finished the [Flashcards](https://hyperskill.org/projects/44?goal=7) project
+
+#### Day 12 (2020-04-03):
+- Finished stage 1 of the [Numeral System Converter](https://hyperskill.org/projects/41?goal=7) project
