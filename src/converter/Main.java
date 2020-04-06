@@ -106,4 +106,32 @@ public class Main {
         String ret = new StringBuilder(res).reverse().toString();
         System.out.println(ret);
     }
+
+    /**
+     * Stage four of the project
+     */
+    public static void stage4() {
+        Scanner sc = new Scanner(System.in);
+        int sourceRad = sc.nextInt();
+        int sourceNum = sc.nextInt();
+        int targetRad = sc.nextInt();
+        String targetNum = "";
+
+        if (sourceRad == 1 || targetRad == 1) {
+            if (sourceRad == 1) {
+                sourceRad = 10;
+                sourceNum = String.valueOf(sourceNum).length();
+                targetNum = Integer.toString(Integer.parseInt(String.valueOf(sourceNum), sourceRad), targetRad);
+            }
+            if (targetRad == 1) {
+                for (int i = 0; i < Integer.parseInt(String.valueOf(sourceNum), sourceRad); i++) {
+                    targetNum += '1';
+                }
+            }
+        } else {
+            targetNum = Integer.toString(Integer.parseInt(String.valueOf(sourceNum), sourceRad), targetRad);
+        }
+
+        System.out.println(targetNum);
+    }
 }
