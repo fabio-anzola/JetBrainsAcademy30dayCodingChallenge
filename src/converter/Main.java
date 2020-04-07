@@ -134,4 +134,64 @@ public class Main {
 
         System.out.println(targetNum);
     }
+
+    /**
+     * Stage five of the project
+     */
+    public static void stage5() {
+        Scanner sc = new Scanner(System.in);
+        boolean isFloat = false;
+        int sourceRad = sc.nextInt();
+        String sourceNum = sc.next();
+        int targetRad = sc.nextInt();
+        double dec;
+        String targetNum = "";
+
+        String integerPar = "";
+        String fractionPar = "";
+
+        if (sourceNum.contains(".")) {
+            isFloat = true;
+            integerPar = sourceNum.split("\\.")[0];
+            fractionPar = sourceNum.split("\\.")[1];
+        } else {
+            integerPar = sourceNum;
+        }
+
+        if (sourceRad == 1) {
+            dec = sourceNum.length();
+        } else {
+            dec = Long.parseLong(integerPar, sourceRad);
+        }
+
+        for (int i = 0; i < fractionPar.length(); i++) {
+            dec += Integer.parseInt(Character.toString(fractionPar.charAt(i)), sourceRad) / Math.pow(sourceRad, i + 1);
+        }
+
+        long integerParLong = (long) dec;
+        double fractionParDouble = dec - integerParLong;
+        if (targetRad == 1) {
+            for (int i = 0; i < integerParLong; i++) {
+                targetNum += '1';
+            }
+        } else {
+            targetNum += Long.toString(integerParLong, targetRad);
+
+            if (isFloat) {
+                targetNum += '.';
+                if (fractionParDouble == 0) {
+                    targetNum += '0';
+                }
+            }
+            int k = 5;
+            while (fractionParDouble > 0 && k > 0) {
+                k--;
+                fractionParDouble *= targetRad;
+                targetNum += Long.toString((int) fractionParDouble, targetRad);
+                fractionParDouble -= (int) fractionParDouble;
+            }
+        }
+
+        System.out.println(targetNum);
+    }
 }
