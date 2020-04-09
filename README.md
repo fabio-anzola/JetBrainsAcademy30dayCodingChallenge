@@ -84,3 +84,6 @@ Link to the Discord-server: https://discord.gg/mQpT3f2
 #### Day 17 (2020-04-08):
 - Finished stage 6 of the [Numeral System Converter](https://hyperskill.org/projects/41?goal=7) project
 - Finished the [Numeral System Converter](https://hyperskill.org/projects/41?goal=7) project
+
+#### Day 18 (2020-04-09):
+- Finished stage 1 of the [Readability Score](https://hyperskill.org/projects/39?goal=7) project
