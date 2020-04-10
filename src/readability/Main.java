@@ -22,4 +22,21 @@ public class Main {
             System.out.println("EASY");
         }
     }
+
+    /**
+     * Stage two of the project
+     */
+    public static void stage2() {
+        Scanner sc = new Scanner(System.in);
+        String[] sentence = sc.nextLine().split("[!\\?\\.]");
+        int average = 0;
+        for (String s : sentence) {
+            average += s.split(" ").length;
+        }
+        if ((average / sentence.length) > 10) {
+            System.out.println("HARD");
+        } else {
+            System.out.println("EASY");
+        }
+    }
 }
