@@ -90,3 +90,6 @@ Link to the Discord-server: https://discord.gg/mQpT3f2
 
 #### Day 19 (2020-04-10):
 - Finished stage 2 of the [Readability Score](https://hyperskill.org/projects/39?goal=7) project
+
+#### Day 20 (2020-04-11):
+- Finished stage 3 of the [Readability Score](https://hyperskill.org/projects/39?goal=7) project
