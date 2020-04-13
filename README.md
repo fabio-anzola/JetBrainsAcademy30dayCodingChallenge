@@ -97,3 +97,6 @@ Link to the Discord-server: https://discord.gg/mQpT3f2
 #### Day 21 (2020-04-12):
 - Finished stage 4 of the [Readability Score](https://hyperskill.org/projects/39?goal=7) project
 - Finished the [Readability Score](https://hyperskill.org/projects/39?goal=7) project
+
+#### Day 22 (2020-04-13):
+- Finished stage 1 of the [Linear Equations Solver](https://hyperskill.org/projects/40?goal=7) project
