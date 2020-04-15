@@ -103,3 +103,6 @@ Link to the Discord-server: https://discord.gg/mQpT3f2
 
 #### Day 23 (2020-04-14):
 - Finished stage 2 of the [Linear Equations Solver](https://hyperskill.org/projects/40?goal=7) project
+
+#### Day 24 (2020-04-15):
+- Finished stage 3 of the [Linear Equations Solver](https://hyperskill.org/projects/40?goal=7) project
