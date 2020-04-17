@@ -109,3 +109,6 @@ Link to the Discord-server: https://discord.gg/mQpT3f2
 
 #### Day 25 (2020-04-16):
 - Finished stage 1 of the [Simple Search Engine](https://hyperskill.org/projects/66?goal=7) project
+
+#### Day 26 (2020-04-17):
+- Finished stage 2 of the [Simple Search Engine](https://hyperskill.org/projects/66?goal=7) project
