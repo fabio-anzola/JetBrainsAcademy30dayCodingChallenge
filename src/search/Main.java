@@ -67,4 +67,58 @@ public class Main {
             foundSomething = false;
         }
     }
+
+    /**
+     * Stage three of the project
+     */
+    public static void stage3() {
+        Scanner sc = new Scanner(System.in);
+        ArrayList<String> resource = new ArrayList<>();
+        System.out.println("Enter the number of people:");
+        int people = Integer.parseInt(sc.nextLine());
+        System.out.println("Enter all people:");
+        for (int i = 0; i < people; i++) {
+            String name = sc.nextLine();
+            resource.add(name);
+        }
+
+        while (true) {
+            System.out.println("\n=== Menu ===");
+            System.out.println("1. Find a person\n"
+                    + "2. Print all people\n"
+                    + "0. Exit");
+            switch (Integer.parseInt(sc.nextLine())) {
+                case 1:
+                    System.out.println("Enter a name or email to search all suitable people.");
+                    boolean foundSomething = false;
+                    String searchString = sc.nextLine().trim();
+                    for (String s : resource) {
+                        if (s.toLowerCase().contains(searchString.toLowerCase())) {
+                            System.out.println(s);
+                            foundSomething = true;
+                        }
+                    }
+                    if (!foundSomething) {
+                        System.out.println("No matching people found.");
+                    }
+                    break;
+
+                case 2:
+                    System.out.println("=== List of people ===");
+                    for (String s : resource) {
+                        System.out.println(s);
+                    }
+                    break;
+
+                case 0:
+                    System.out.println("Bye!");
+                    System.exit(0);
+                    break;
+
+                default:
+                    System.out.println("Incorrect option! Try again.");
+                    break;
+            }
+        }
+    }
 }
