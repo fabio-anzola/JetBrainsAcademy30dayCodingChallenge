@@ -1,5 +1,10 @@
 package search;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -80,6 +85,69 @@ public class Main {
         for (int i = 0; i < people; i++) {
             String name = sc.nextLine();
             resource.add(name);
+        }
+
+        while (true) {
+            System.out.println("\n=== Menu ===");
+            System.out.println("1. Find a person\n"
+                    + "2. Print all people\n"
+                    + "0. Exit");
+            switch (Integer.parseInt(sc.nextLine())) {
+                case 1:
+                    System.out.println("Enter a name or email to search all suitable people.");
+                    boolean foundSomething = false;
+                    String searchString = sc.nextLine().trim();
+                    for (String s : resource) {
+                        if (s.toLowerCase().contains(searchString.toLowerCase())) {
+                            System.out.println(s);
+                            foundSomething = true;
+                        }
+                    }
+                    if (!foundSomething) {
+                        System.out.println("No matching people found.");
+                    }
+                    break;
+
+                case 2:
+                    System.out.println("=== List of people ===");
+                    for (String s : resource) {
+                        System.out.println(s);
+                    }
+                    break;
+
+                case 0:
+                    System.out.println("Bye!");
+                    System.exit(0);
+                    break;
+
+                default:
+                    System.out.println("Incorrect option! Try again.");
+                    break;
+            }
+        }
+    }
+
+    /**
+     * Stage four of the project
+     */
+    public static void stage4(String[] args) throws IOException{
+        Scanner sc = new Scanner(System.in);
+        ArrayList<String> resource = new ArrayList<>();
+        String pathToPersons = "";
+        for (int i = 0; i < args.length; i++) {
+            if (args[i].equals("--data")) {
+                pathToPersons = args[i+1];
+            }
+        }
+        try (
+                BufferedReader in = Files.newBufferedReader(Paths.get(pathToPersons), StandardCharsets.UTF_8);
+
+        ) {
+            String line;
+
+            while ((line = in.readLine()) != null) {
+                resource.add(line);
+            }
         }
 
         while (true) {
