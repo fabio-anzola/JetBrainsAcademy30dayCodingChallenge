@@ -5,8 +5,7 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.*;
 
 /**
  * The Simple Search Engine project
@@ -27,7 +26,7 @@ public class Main {
         int index = -1;
         for (int i = 0; i < words.length; i++) {
             if (words[i].equals(searchPhrase)) {
-                index = i+1;
+                index = i + 1;
             }
         }
         System.out.println((index == -1) ? "Not found" : String.valueOf(index));
@@ -130,13 +129,13 @@ public class Main {
     /**
      * Stage four of the project
      */
-    public static void stage4(String[] args) throws IOException{
+    public static void stage4(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
         ArrayList<String> resource = new ArrayList<>();
         String pathToPersons = "";
         for (int i = 0; i < args.length; i++) {
             if (args[i].equals("--data")) {
-                pathToPersons = args[i+1];
+                pathToPersons = args[i + 1];
             }
         }
         try (
@@ -171,6 +170,89 @@ public class Main {
                     }
                     break;
 
+                case 2:
+                    System.out.println("=== List of people ===");
+                    for (String s : resource) {
+                        System.out.println(s);
+                    }
+                    break;
+
+                case 0:
+                    System.out.println("Bye!");
+                    System.exit(0);
+                    break;
+
+                default:
+                    System.out.println("Incorrect option! Try again.");
+                    break;
+            }
+        }
+    }
+
+    /**
+     * Stage five of the project
+     */
+    public static void stage5(String[] args) throws IOException {
+        Scanner sc = new Scanner(System.in);
+        List<String> resource = new ArrayList<>();
+        Map<String, ArrayList<Integer>> map = new LinkedHashMap<>();
+        String pathToPersons = "";
+        for (int i = 0; i < args.length; i++) {
+            if (args[i].equals("--data")) {
+                pathToPersons = args[i + 1];
+            }
+        }
+        try (
+                BufferedReader in = Files.newBufferedReader(Paths.get(pathToPersons), StandardCharsets.UTF_8);
+
+        ) {
+            String line;
+
+            while ((line = in.readLine()) != null) {
+                resource.add(line);
+            }
+        }
+
+        int i = 0;
+        while (i < resource.size()) {
+            for (String item : resource.get(i).split(" ")) {
+                if (map.containsKey(item)) {
+                    map.get(item).add(i);
+                } else {
+                    ArrayList<Integer> integerList = new ArrayList<>();
+                    integerList.add(i);
+                    map.put(item, integerList);
+                }
+            }
+            ++i;
+        }
+        for (String item : map.keySet()) {
+            System.out.println(item + map.get(item).toString());
+        }
+        while (true) {
+            System.out.println("\n=== Menu ===");
+            System.out.println("1. Find a person\n"
+                    + "2. Print all people\n"
+                    + "0. Exit");
+            switch (Integer.parseInt(sc.nextLine())) {
+                case 1:
+                    System.out.println("Enter a name or email to search all suitable people.");
+                    String searchString = sc.nextLine().trim();
+                    List<String> found = new ArrayList<>();
+                    if (map.containsKey(searchString)) {
+                        for (Integer findKey : map.get(searchString)) {
+                            found.add(resource.get(findKey));
+                        }
+                    }
+                    if (found.size() > 0) {
+                        System.out.println(found.size() + " persons found: ");
+                        for (String item : found) {
+                            System.out.println(item);
+                        }
+                    } else {
+                        System.out.println("No matching people found.");
+                    }
+                    break;
                 case 2:
                     System.out.println("=== List of people ===");
                     for (String s : resource) {
