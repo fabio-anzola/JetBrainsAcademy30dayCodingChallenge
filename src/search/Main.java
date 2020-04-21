@@ -271,4 +271,132 @@ public class Main {
             }
         }
     }
+
+    /**
+     * Stage six of the project
+     */
+    public static void stage6(String[] args) throws IOException {
+        Scanner sc = new Scanner(System.in);
+        ArrayList<String> all = new ArrayList<>();
+        List<String> resource = new ArrayList<>();
+        Map<String, ArrayList<Integer>> map = new LinkedHashMap<>();
+        String pathToPersons = "";
+        for (int i = 0; i < args.length; i++) {
+            if (args[i].equals("--data")) {
+                pathToPersons = args[i + 1];
+            }
+        }
+        try (
+                BufferedReader in = Files.newBufferedReader(Paths.get(pathToPersons), StandardCharsets.UTF_8);
+
+        ) {
+            String line;
+
+            while ((line = in.readLine()) != null) {
+                resource.add(line);
+                all.add(line);
+            }
+        }
+
+        int i = 0;
+        while (i < resource.size()) {
+            for (String item : resource.get(i).split(" ")) {
+                if (map.containsKey(item)) {
+                    map.get(item).add(i);
+                } else {
+                    ArrayList<Integer> integerList = new ArrayList<>();
+                    integerList.add(i);
+                    map.put(item, integerList);
+                }
+            }
+            ++i;
+        }
+        while (true) {
+            System.out.println("\n=== Menu ===");
+            System.out.println("1. Find a person\n"
+                    + "2. Print all people\n"
+                    + "0. Exit");
+            switch (Integer.parseInt(sc.nextLine())) {
+                case 1:
+                    System.out.println("Select a matching strategy: ALL, ANY, NONE");
+                    String method = sc.nextLine();
+                    List<String> found = new ArrayList<>();
+                    String searchString;
+
+                    switch (method) {
+                        case "ALL":
+                            System.out.println("Enter a name or email to search all suitable people.");
+                            searchString = sc.nextLine().trim();
+                            for (String item : resource) {
+                                for (String itemListSplit : item.split("\\s+")) {
+                                    for (String itemFindSplit : searchString.split("\\s+")) {
+                                        if (itemListSplit.compareToIgnoreCase(itemFindSplit) != 0) {
+                                            found.add(item);
+                                            break;
+                                        }
+                                    }
+                                }
+                            }
+                            break;
+
+                        case "ANY":
+                            System.out.println("Enter a name or email to search all suitable people.");
+                            searchString = sc.nextLine().trim();
+                            for (String item : resource) {
+                                for (String itemListSplit : item.split("\\s+")) {
+                                    for (String itemFindSplit : searchString.split("\\s+")) {
+                                        if (itemListSplit.compareToIgnoreCase(itemFindSplit) == 0) {
+                                            found.add(item);
+                                        }
+                                    }
+                                }
+                            }
+                            break;
+
+                        case "NONE":
+                            System.out.println("Enter a name or email to search all suitable people.");
+                            searchString = sc.nextLine().trim();
+                            for (String item : resource) {
+                                boolean b = false;
+                                for (String itemListSplit : item.split("\\s+")) {
+                                    for (String itemFindSplit : searchString.split("\\s+")) {
+                                        if (itemListSplit.compareToIgnoreCase(itemFindSplit) == 0) {
+                                            b = true;
+                                            break;
+                                        }
+                                    }
+                                }
+                                if (!b) {
+                                    found.add(item);
+                                }
+                            }
+                            break;
+                    }
+                    if (found.size() > 0) {
+                        System.out.println(found.size() + " persons found: ");
+                        for (String item : found) {
+                            System.out.println(item);
+                        }
+                    } else {
+                        System.out.println("No matching people found.");
+                    }
+                    break;
+                case 2:
+                    System.out.println("=== List of people ===");
+                    for (String s : all) {
+                        System.out.println(s);
+                    }
+                    break;
+
+                case 0:
+                    System.out.println("Bye!");
+                    System.exit(0);
+                    break;
+
+                default:
+                    System.out.println("Incorrect option! Try again.");
+                    break;
+            }
+        }
+    }
 }
