@@ -6,6 +6,11 @@ Starting on the 2020-03-23 at 10.AM UTC I will try to solve at least one problem
 
 Link to the Discord-server: https://discord.gg/mQpT3f2
 
+## Some final words:
+I really enjoyed this challenge as it really kept me motivated to solve coding-problems every day! Also the [Hyperskill](https://hyperskill.org/) platform really provided a nice learning-environment.
+The Discord-Server was a nice way to communicate with everyone attempting this challenge.
+All in all, I really enjoyed it!
+
 ## Logbook:
 
 #### Day 1 (2020-03-23):
@@ -19,7 +24,6 @@ Link to the Discord-server: https://discord.gg/mQpT3f2
 - Finished the [Encryption-Decryption](https://hyperskill.org/projects/46?goal=7) project
 
 #### Day 2 (2020-03-24):
-
 - Finished stage 1 of the [Coffee Machine](https://hyperskill.org/projects/33?goal=7) project
 - Finished stage 2 of the [Coffee Machine](https://hyperskill.org/projects/33?goal=7) project
 - Finished stage 3 of the [Coffee Machine](https://hyperskill.org/projects/33?goal=7) project
@@ -29,7 +33,6 @@ Link to the Discord-server: https://discord.gg/mQpT3f2
 - Finished the [Coffee Machine](https://hyperskill.org/projects/33?goal=7) project
 
 #### Day 3 (2020-03-25):
-
 - Finished stage 1 of the [Simple Chatty Bot](https://hyperskill.org/projects/31?goal=7) project
 - Finished stage 2 of the [Simple Chatty Bot](https://hyperskill.org/projects/31?goal=7) project
 - Finished stage 3 of the [Simple Chatty Bot](https://hyperskill.org/projects/31?goal=7) project
